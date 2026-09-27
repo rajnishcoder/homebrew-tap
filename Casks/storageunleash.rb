@@ -5,8 +5,7 @@ cask "storageunleash" do
   sha256 arm:   "a34bd3dc0adfdd1e9f76d6654d1b8566f0584864531fe0084ce8f7fdbd63ac4c",
          intel: "3afeddad06c78963643e4b557cad13dc93d80155081fc20a89b2709335b9d58c"
 
-  url "https://github.com/rajnishcoder/StorageUnleash/releases/download/v#{version}/StorageUnleash-#{version}#{arch.empty? ? "" : "-#{arch}"}.dmg",
-      verified: "github.com/rajnishcoder/StorageUnleash/"
+  url "https://github.com/rajnishcoder/StorageUnleash/releases/download/v#{version}/StorageUnleash-#{version}#{arch.empty? ? "" : "-#{arch}"}.dmg"
   name "Storage Unleashed"
   desc "Fast, modern, visual desktop storage analyzer for macOS"
   homepage "https://www.storageunleashed.com/"
@@ -17,7 +16,7 @@ cask "storageunleash" do
   end
 
   auto_updates true
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "StorageUnleash.app"
 
