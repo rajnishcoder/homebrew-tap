@@ -5,24 +5,24 @@ Official Homebrew tap for [Storage Unleashed](https://www.storageunleashed.com) 
 ## Installation
 
 ```bash
-brew install rajnishcoder/tap/storageunleash
+brew install rajnishcoder/tap/storageunleashed
 ```
 
 Or via direct tap:
 
 ```bash
 brew tap rajnishcoder/tap
-brew install --cask storageunleash
+brew install --cask storageunleashed
 ```
 
 ## Update
 
 ```bash
-brew upgrade storageunleash
+brew upgrade storageunleashed
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall --zap storageunleash
+brew uninstall --zap storageunleashed
 ```
