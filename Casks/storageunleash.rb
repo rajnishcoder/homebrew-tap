@@ -20,6 +20,11 @@ cask "storageunleash" do
 
   app "StorageUnleash.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-rd", "com.apple.quarantine", "#{appdir}/StorageUnleash.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/com.storageunleashed.app",
     "~/Library/Application Support/StorageUnleash",
